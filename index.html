@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portal de notícias</title>
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1e1e2f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section:nth-of-type(1) {
+            background-color: #f1f1f1;
+        }
+
+        section:nth-of-type(2) {
+            background-color: #e0f7fa;
+        }
+
+        section:nth-of-type(3) {
+            background-color: #fff3e0;
+        }
+
+        section:nth-of-type(4) {
+            background-color: #ede7f6;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        article img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        article h3 {
+            margin: 10px 0;
+        }
+
+        article time {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        article p {
+            text-align: justify;
+        }
+
+        article a {
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal Maruckus News</h1>
+        <nav>
+            <ul>
+                <li><a href="#sports">Esportes</a></li>
+                <li><a href="#economy">Economia</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#politics">Política</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sports">
+        <h2>Esportes</h2>
+        <article>
+            <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
+            <header><time>13/07/2022 às 12:35</time></header>
+            <h3>Grande clássico na noite de hoje</h3>
+            <p>Times rivais se enfrentam com promessa de casa cheia e muita emoção no Brasileirão.</p>
+            <a href="#">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano" />
+            <header><time>13/07/2022 às 12:35</time></header>
+            <h3>Noite do Superbowl</h3>
+            <p>O maior evento esportivo dos EUA promete shows e jogadas espetaculares nesta edição.</p>
+            <a href="#">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/basquete.jpg" alt="Quadra de basquete" />
+            <header><time>13/07/2022 às 12:35</time></header>
+            <h3>Notícia sobre a NBA</h3>
+            <p>Playoffs pegando fogo e favoritos caindo cedo. Temporada cheia de surpresas na liga americana.</p>
+            <a href="#">Ler mais</a>
+        </article>
+    </section>
+
+    <section id="economy">
+        <h2>Economia</h2>
+        <article>
+            <img src="./imagens/dolares.jpg" alt="Notas de dólar" />
+            <header><time>13/07/2022 às 12:35</time></header>
+            <h3>Dólar em alta de 0.50%</h3>
+            <p>Mercado reage a declarações do Fed e tensão internacional aumenta valor da moeda americana.</p>
+            <a href="#">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/euro.jpg" alt="Notas de euro" />
+            <header><time>13/07/2022 às 12:35</time></header>
+            <h3>Euro em queda de 0.40%</h3>
+            <p>Crise energética afeta a zona do euro e moeda sofre desvalorização frente ao dólar.</p>
+            <a href="#">Ler mais</a>
+        </article>
+        <article>
+            <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
+            <header><time>13/07/2022 às 12:35</time></header>
+            <h3>Alta no preço do barril do petróleo</h3>
+            <p>Conflitos no Oriente Médio e corte na produção elevam preços e preocupam mercados globais.</p>
+            <a href="#">Ler mais</a>
+        </article>
+    </section>
+
+    <section id="games">
+        <h2>Games</h2>
+        <article>
+            <img src="./imagens/games.jpg" alt="Controle de videogame" />
+            <header><time>31/07/2025 às 10:00</time></header>
+            <h3>Rockstar revela trailer oficial de GTA VI</h3>
+            <p>Após anos de espera, fãs vibram com o lançamento do trailer mais aguardado da década. Vice City está de volta!</p>
+            <a href="#">Ler mais</a>
+        </article>
+    </section>
+
+    <section id="politics">
+        <h2>Política</h2>
+        <article>
+            <img src="./imagens/politica.jpg" alt="Congresso Nacional" />
+            <header><time>31/07/2025 às 11:30</time></header>
+            <h3>Reforma tributária avança no Senado</h3>
+            <p>Após meses de debate, o texto-base da reforma é aprovado com apoio da maioria dos partidos. População ainda tem dúvidas sobre os impactos.</p>
+            <a href="#">Ler mais</a>
+        </article>
+    </section>
+</body>
+</html>
+
